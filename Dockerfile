@@ -5,7 +5,7 @@ RUN wget -q http://central.maven.org/maven2/org/jmxtrans/jmxtrans/259/jmxtrans-2
 
 RUN mkdir -p /var/log/jmxtrans
 
-ENV JMXTRANS_GRAPHITE_HOST graphite
+ENV JMXTRANS_GRAPHITE_HOST localhost
 ENV JMXTRANS_GRAPHITE_PORT 2003
 
 ENTRYPOINT ["/bin/sh", "-c", "java \
